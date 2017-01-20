@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="StyleSheets/styles.css">
+        <title>Carcassonne Clock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script src="JavaScripts/JQuery/JQuery.js"></script>
+        <script src="JavaScripts/index.js"></script>
+        <script src="JavaScripts/colors.js"></script>
+        <script src="JavaScripts/pages.js"></script>
+        <script src="JavaScripts/errorTrapping.js"></script>
+        <script src="JavaScripts/timing.js"></script>
+        <script src="JavaScripts/users.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="main_header">Carcassonne Clock</div>
+        <span class="header_button right_header" id="timing_setup_page_proceed">Set Timing ></span>
+        <span class="header_button right_header" id="play_game_page_proceed">Play Game ></span>
+        <span class="header_button left_header" id="user_setup_page_back">< Setup</span>
+        <span class="header_button left_header" id="timing_setup_page_back">< Set Timing</span>
+        
+            <div id="main_content">
+
+                <div id="user_setup_page" class="content_page">
+
+                <center>
+                    <div id="users_info_holder" class="horizontal_holder">
+
+                        <div id="users"></div>
+
+                        <div id="new_user_sign"></div>
+
+                    </div>
+                </center>
+
+                <center>
+                    <div id="meeples_holder" class="horizontal_holder">
+
+                        <table>
+                            <tr>
+                                <td colspan="7" class="meeple_selection_heading">Player <span class="player_ID"></span></td>
+                            </tr>
+
+                            <tr id="meeple_row">
+                                <td><div class="meeple_holder" id="yellow_meeple"></div></td>
+                                <td><div class="meeple_holder" id="red_meeple"></div></td>
+                                <td><div class="meeple_holder" id="blue_meeple"></div></td>
+                                <td><div class="meeple_holder" id="black_meeple"></div></td>
+                                <td><div class="meeple_holder" id="green_meeple"></div></td>
+                                <td><div class="meeple_holder" id="grey_meeple"></div></td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                </center>
+
+                <center>
+                    <div class="error_container"></div>
+                </center>
+                    
+                    
+            </div>
+                
+            <div id="timing_setup_page" class="content_page">
+            
+                <center><div id="user_timing_input" class="horizontal_holder"></div></center>
+            
+                <center>
+                    <div class="error_container"></div>
+                </center>
+                
+            </div>
+            
+            <div id="play_game_page" class="content_page">
+            
+                <center><div id="gameplay_display" class="horizontal_holder"></div></center>
+            
+                <center><div id="start_pause_button" class="start">Start</div></center>
+                
+            </div>    
+            
+                
+        </div>
+
+    </body>
+</html>
